@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Buildershop.AddTovar"
+        x:CompileBindings="False"
+        Title="AddTovar">
+  
+    <StackPanel Spacing="5">
+        <TextBox Name="Article" Watermark="Article" Text="{Binding Article}"></TextBox>
+        <TextBox Name="Name" Watermark="Name" Text="{Binding Name}"></TextBox>
+        <TextBox Name="EdIzmer" Watermark="EdIzmer" Text="{Binding EdIzmer}"></TextBox>
+        <TextBox Name="Cost" Watermark="Cost" Text="{Binding Cost}"></TextBox>
+        <TextBox Name="Seller" Watermark="Seller" Text="{Binding Seller}"></TextBox>
+        <TextBox Name="Creator" Watermark="Creator" Text="{Binding Creator}"></TextBox>
+        <TextBox Name="Category" Watermark="Category" Text="{Binding Category}"></TextBox>
+        <TextBox Name="Discount" Watermark="Discount" Text="{Binding Discount}"></TextBox>
+        <TextBox Name="Colvo" Watermark="Colvo" Text="{Binding Colvo}"></TextBox>
+        <TextBox Name="Description" Watermark="Description" Text="{Binding Description}"></TextBox>
+
+        <TextBlock Name="durak" Text="durak" Foreground="red" IsVisible="False"></TextBlock>
+
+        <Button Name="AddNew" Content="Add new" Click="AddNew_Click"></Button>
+        <Button Name="Edit" Content="Save Edit" Click="Edit_Click"></Button>
+
+    </StackPanel>
+
+</Window>

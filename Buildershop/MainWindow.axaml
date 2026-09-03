@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Buildershop.MainWindow"
+        x:CompileBindings="False"
+        Title="Buildershop">
+    <StackPanel MaxHeight="200" MaxWidth="200" Spacing="25">
+        <TextBox Name="LoginBox" Watermark="login"></TextBox>
+        <TextBox Name="PasswordBox" Watermark="password"></TextBox>
+
+        <TextBlock Name="durak" Text="invalid" Foreground="Red" IsVisible="False"></TextBlock>
+
+        <Button Name="SignIn" Content="sign in" Click="SignIn_Click"></Button>
+
+        <Button Name="Guest" Content="Guest" Click="Guest_Click"></Button>
+
+    </StackPanel>
+</Window>
